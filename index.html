@@ -306,12 +306,28 @@
                     </div>
                 </div>
 
-                <!-- Card 4 -->
+                <!-- Card 4 - IBM Certification -->
                 <div
-                    class="bento-card spotlight-card col-span-1 md:col-span-2 bg-gradient-to-br from-primary to-secondary text-white rounded-3xl p-8 flex flex-col justify-center relative overflow-hidden hoverable reveal-on-scroll delay-300">
+                    class="bento-card spotlight-card col-span-1 bg-slate-900 text-white rounded-3xl p-8 flex flex-col justify-center relative overflow-hidden hoverable reveal-on-scroll delay-300">
+                    <div class="spotlight-overlay"></div>
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-primary blur-3xl opacity-30 rounded-full"></div>
+                    <div class="relative z-10 text-center">
+                        <div
+                            class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-4 text-2xl mx-auto">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">IBM Certified</h3>
+                        <p class="text-slate-400 text-sm mb-3">Cybersecurity Analyst Professional Certificate</p>
+                        <p class="text-slate-500 text-xs leading-relaxed">Completed comprehensive training in cybersecurity fundamentals, network security, threat analysis, and incident response through IBM's professional certification program.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="bento-card spotlight-card col-span-1 bg-gradient-to-br from-primary to-secondary text-white rounded-3xl p-8 flex flex-col justify-center relative overflow-hidden hoverable reveal-on-scroll delay-400">
                     <div class="spotlight-overlay"></div>
                     <i class="fas fa-quote-right absolute top-8 right-8 text-6xl text-white/10"></i>
-                    <h3 class="text-2xl md:text-3xl font-display font-bold leading-tight relative z-10 max-w-lg">
+                    <h3 class="text-xl md:text-2xl font-display font-bold leading-tight relative z-10 max-w-lg">
                         "The best way to predict the future is to create it."
                     </h3>
                     <p class="mt-4 text-white/80 text-sm font-mono relative z-10">— Junyu</p>
@@ -485,7 +501,7 @@
                     class="project-item spotlight-card group cursor-pointer project-trigger hoverable reveal-on-scroll"
                     data-filter-category="web" data-title="Personal Portfolio Website"
                     data-category="Web Development • HTML/CSS/JS" data-image="images/Cleveroad.jpg"
-                    data-desc="Built my own portfolio website from scratch using HTML, CSS, and JavaScript. Features responsive design and interactive elements.">
+                    data-desc="Built my own portfolio website from scratch using HTML, CSS, and JavaScript. Features responsive design and interactive elements." data-tech="HTML,CSS,JavaScript">
                     <div class="spotlight-overlay"></div>
                     <div
                         class="project-card relative w-full aspect-[4/3] bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 preserve-3d transition-transform duration-300 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
@@ -518,7 +534,7 @@
                     class="project-item spotlight-card group cursor-pointer md:mt-24 project-trigger hoverable reveal-on-scroll delay-100"
                     data-filter-category="mobile" data-title="Task Management App"
                     data-category="Mobile Development • React Native" data-image="images/Game Dashboard Design.jpg"
-                    data-desc="A simple task management mobile app built with React Native. Features include adding, editing, and deleting tasks with local storage.">
+                    data-desc="A simple task management mobile app built with React Native. Features include adding, editing, and deleting tasks with local storage." data-tech="React Native,JavaScript">
                     <div class="spotlight-overlay"></div>
                     <div
                         class="project-card relative w-full aspect-[4/3] bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 preserve-3d transition-transform duration-300 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
@@ -551,7 +567,7 @@
                     class="project-item spotlight-card group cursor-pointer project-trigger hoverable reveal-on-scroll"
                     data-filter-category="security" data-title="Basic Network Scanner"
                     data-category="Cybersecurity • Python" data-image="images/Capture d'écran 2025-10-22 182207.png"
-                    data-desc="A simple Python script that scans for open ports on a network using socket programming. Learning the basics of network security and ethical hacking.">
+                    data-desc="A simple Python script that scans for open ports on a network using socket programming. Learning the basics of network security and ethical hacking." data-tech="Python">
                     <div class="spotlight-overlay"></div>
                     <div
                         class="project-card relative w-full aspect-[4/3] bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 preserve-3d transition-transform duration-300 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
@@ -583,9 +599,9 @@
                 <!-- Project 4 -->
                 <article
                     class="project-item spotlight-card group cursor-pointer md:mt-24 project-trigger hoverable reveal-on-scroll delay-100"
-                    data-filter-category="web security" data-title="Simple Login System"
-                    data-category="Web Security • JavaScript" data-image="images/Task manager app.jpg"
-                    data-desc="A basic web login system with client-side validation. Learning about authentication, password security, and common web vulnerabilities.">
+                    data-filter-category="web security" data-title="Proxy Website"
+                    data-category="Web Development • HTML/CSS/JS" data-image="images/Task manager app.jpg" data-link="https://proxyy-sepia-tau.vercel.app/" data-tech="HTML,CSS,JavaScript,Smarty"
+                    data-desc="A web proxy application that allows users to browse websites anonymously through a secure proxy server. Features include URL filtering, request logging, and basic security measures.">
                     <div class="spotlight-overlay"></div>
                     <div
                         class="project-card relative w-full aspect-[4/3] bg-slate-200 dark:bg-surface rounded-2xl overflow-hidden mb-6 preserve-3d transition-transform duration-300 shadow-lg group-hover:shadow-xl border border-slate-200 dark:border-white/5">
@@ -603,8 +619,8 @@
                         <div>
                             <h3
                                 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">
-                                Simple Login System</h3>
-                            <p class="text-slate-500 text-sm">Web Security • JavaScript</p>
+                                Proxy Website</h3>
+                            <p class="text-slate-500 text-sm">Web Development • JavaScript</p>
                         </div>
                         <span
                             class="w-8 h-8 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all">
@@ -847,7 +863,7 @@
                                     class="text-3xl md:text-5xl font-display font-bold text-slate-900 dark:text-white">
                                     Project Title</h2>
                             </div>
-                            <a href="#"
+                            <a id="modal-link" href="#"
                                 class="px-6 py-3 bg-slate-900 dark:bg-white text-white dark:text-black rounded-full font-bold text-sm hover:scale-105 transition-transform whitespace-nowrap hoverable focus:outline-none">
                                 Visit Website <i class="fas fa-external-link-alt ml-2"></i>
                             </a>
@@ -865,7 +881,7 @@
                                     <h4
                                         class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-2">
                                         Technology</h4>
-                                    <div class="flex flex-wrap gap-2">
+                                    <div id="modal-tech" class="flex flex-wrap gap-2">
                                         <span
                                             class="px-3 py-1 bg-slate-100 dark:bg-white/10 rounded-full text-xs font-medium text-slate-600 dark:text-slate-300">JavaScript</span>
                                         <span

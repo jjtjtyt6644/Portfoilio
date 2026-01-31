@@ -169,12 +169,27 @@ const mTitle = document.getElementById('modal-title');
 const mCategory = document.getElementById('modal-category');
 const mImage = document.getElementById('modal-image');
 const mDesc = document.getElementById('modal-desc');
+const mLink = document.getElementById('modal-link');
+const mTech = document.getElementById('modal-tech');
 
 function openModal(data) {
     mTitle.textContent = data.title;
     mCategory.textContent = data.category;
     mImage.src = data.image;
     mDesc.textContent = data.desc;
+    mLink.href = data.link || '#';
+
+    // Update technologies
+    mTech.innerHTML = '';
+    if (data.tech) {
+        const techs = data.tech.split(',');
+        techs.forEach(tech => {
+            const span = document.createElement('span');
+            span.className = 'px-3 py-1 bg-slate-100 dark:bg-white/10 rounded-full text-xs font-medium text-slate-600 dark:text-slate-300';
+            span.textContent = tech.trim();
+            mTech.appendChild(span);
+        });
+    }
 
     modal.classList.remove('hidden');
     setTimeout(() => {
@@ -202,7 +217,9 @@ triggers.forEach(trigger => {
             title: trigger.dataset.title,
             category: trigger.dataset.category,
             image: trigger.dataset.image,
-            desc: trigger.dataset.desc
+            desc: trigger.dataset.desc,
+            link: trigger.dataset.link,
+            tech: trigger.dataset.tech
         };
         openModal(data);
     });
