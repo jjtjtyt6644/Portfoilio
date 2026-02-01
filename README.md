@@ -2,14 +2,14 @@
 
 # Junyu – Aspiring Cybersecurity Professional & Web Developer 🚀
 
-A modern, high-performance personal portfolio website showcasing my work as a **16-year-old high school student** passionate about **cybersecurity and web development**.  
+A modern, high-performance personal portfolio website showcasing my work as a **high school student** passionate about **cybersecurity and web development**.  
 Built with a strong focus on **animations, performance, and user experience**.
 
 ---
 
 ## Live Demo 🚀
 
-You can view the live website here: [Live Demo](https://junyu.github.io/portfolio/)
+You can view the live website here: [Live Demo](https://portfoilio-six-weld.vercel.app/)
 
 ---
 
@@ -62,16 +62,14 @@ You can view the live website here: [Live Demo](https://junyu.github.io/portfoli
 
 ## 📬 Contact
 
-- Email: junyu@example.com
+- Email: yaoprox0@gmail.com
 - Location: [Your Location]
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/junyu/)
-- GitHub: [GitHub](https://github.com/junyu)
-- Instagram: [Instagram](https://www.instagram.com/junyu/)
+- GitHub: [GitHub](https://github.com/jjtjtyt6644)
 
 ---
 
-Made with ❤️ by **Junyu**
+Made by **Junyu**
 
 ```bash
-git clone https://github.com/junyu/portfolio.git
+git clone https://github.com/jjtjtyt6644/Portfoilio.git
 
