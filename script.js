@@ -179,6 +179,13 @@ function openModal(data) {
     mDesc.textContent = data.desc;
     mLink.href = data.link || '#';
 
+    // Update link text based on project type
+    if (data.category && data.category.includes('Mobile')) {
+        mLink.innerHTML = 'Download app <i class="fas fa-download ml-2"></i>';
+    } else {
+        mLink.innerHTML = 'Visit Website <i class="fas fa-external-link-alt ml-2"></i>';
+    }
+
     // Update technologies
     mTech.innerHTML = '';
     if (data.tech) {
