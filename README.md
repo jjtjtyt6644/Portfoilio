@@ -63,7 +63,7 @@ You can view the live website here: [Live Demo](https://portfoilio-six-weld.verc
 ## 📬 Contact
 
 - Email: yaoprox0@gmail.com
-- Location: [Your Location]
+- Location: Singapore
 - GitHub: [GitHub](https://github.com/jjtjtyt6644)
 
 ---
