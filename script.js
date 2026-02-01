@@ -1,12 +1,29 @@
 // === PRELOADER ===
 window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
+    const loadingTexts = ['Initializing...', 'Loading assets...', 'Almost ready...'];
+    let textIndex = 0;
+
+    // Dynamic loading text
+    const textElement = preloader.querySelector('.text-slate-600.dark\\:text-slate-400');
+    if (textElement) {
+        const textInterval = setInterval(() => {
+            textIndex = (textIndex + 1) % loadingTexts.length;
+            textElement.textContent = loadingTexts[textIndex];
+        }, 800);
+
+        // Clear interval when preloader hides
+        setTimeout(() => {
+            clearInterval(textInterval);
+        }, 1000);
+    }
+
     setTimeout(() => {
         preloader.classList.add('hide');
         setTimeout(() => {
             preloader.style.display = 'none';
         }, 600);
-    }, 1000); 
+    }, 2500); // Extended loading time for better UX
     
     document.getElementById('year').textContent = new Date().getFullYear();
     updateTime();
@@ -25,6 +42,53 @@ function updateTime() {
         });
     }
 }
+
+// === TYPING EFFECT ===
+function typeWriter(text, element, speed = 100) {
+    let i = 0;
+    element.textContent = '';
+    
+    function type() {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+    
+    setTimeout(type, 2000); // Start typing after 2 seconds
+}
+
+// === COUNTER ANIMATION ===
+function animateCounter(element, target, duration = 2000) {
+    const start = 2020; // Start from 2020
+    const increment = (target - start) / (duration / 16); // 60fps
+    let current = start;
+    
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            current = target;
+            clearInterval(timer);
+        }
+        element.textContent = Math.floor(current);
+    }, 16);
+}
+
+// Initialize typing effect and counter
+window.addEventListener('load', () => {
+    const typingElement = document.getElementById('typing-text');
+    if (typingElement) {
+        typeWriter('Security Enthusiast.', typingElement, 150);
+    }
+    
+    // Animate year counter
+    const yearElement = document.getElementById('year');
+    if (yearElement) {
+        const currentYear = new Date().getFullYear();
+        animateCounter(yearElement, currentYear, 1500);
+    }
+});
 
 // === DARK MODE LOGIC ===
 const themeToggle = document.getElementById('theme-toggle');
